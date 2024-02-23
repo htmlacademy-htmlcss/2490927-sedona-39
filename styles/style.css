@@ -73,7 +73,8 @@ body {
 }
 
 .hero {
-  background-image: url(../images/index-background.jpg), url(../images/divider.png);
+  background-image: url(../images/index-background.jpg);
+  background-color: #e2f1f8;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
