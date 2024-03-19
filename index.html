@@ -9,7 +9,8 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header">
+
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <div class="navigation-pages-container">
             <a class="navigation-logo-link" href="index.html" aria-current="page">
@@ -49,9 +50,9 @@
         </nav>
       </header>
 
-      <main class="main-index">
+      <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Город Седона</h1>
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Добро пожаловать в славный городок Седона</h2>
           <img class="hero-img hero-img-welcome" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks">
@@ -62,7 +63,7 @@
           <p class="city-slogan-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ul class="advantages-list">
             <li class="advantages-item-container-large">
@@ -118,7 +119,7 @@
           </ul>
         </section>
 
-        <section class="search-hotel">
+        <section class="search-hotel" data-test="search">
           <div class="search-hotel-text-container">
             <h2 class="search-hotel-title">Заинтересовались?</h2>
             <p class="search-hotel-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
@@ -128,7 +129,7 @@
           <a class="search-hotel-link" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
-        <section class="newsletter">
+        <section class="newsletter" data-test="subscribe">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -141,7 +142,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link social-link-vk" href="https://vk.com/htmlacademy"></a>
