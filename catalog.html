@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="page-container">
+    <div class="page-container" data-test="header">
       <header class="page-header">
         <nav class="navigation">
           <div class="navigation-pages-container">
@@ -49,8 +49,8 @@
         </nav>
       </header>
 
-      <main class="main-index">
-        <section class="filter-hotels" data-test="filter">
+      <main class="main-index"  data-test="catalog">
+        <section class="filter-hotels">
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -60,7 +60,7 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-          <section class="section-filter">
+          <section class="section-filter" data-test="filter">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group infrastructure-group">
@@ -146,7 +146,7 @@
 
         </section>
 
-        <section class="catalog-hotels" data-test="catalog">
+        <section class="catalog-hotels">
           <div class="catalog-hotels-header">
             <h2 class="catalog-title">Найдено гостиниц: 38</h2>
             <select class="catalog-select-control" aria-label="Сортировка">

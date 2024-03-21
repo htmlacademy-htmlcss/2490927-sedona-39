@@ -1297,11 +1297,12 @@ body {
   font-size: 16px;
   line-height: 21px;
   margin: 0;
-  padding: 8px 20px 0;
+  padding: 2px 20px 0;
 }
 
 .modal-input-hint-warning {
   color: #FF5757;
+  padding-top: 5px
 }
 
 .modal-date-input-container {
