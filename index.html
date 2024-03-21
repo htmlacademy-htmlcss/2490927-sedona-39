@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Добро пожаловать в Седону!</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -59,7 +60,7 @@
         </section>
 
         <section class="city-slogan">
-          <h2 class="city-slogan-title">Седона - небольщой городок в аризоне, заслуживающий большего</h2>
+          <h2 class="city-slogan-title">Седона — небольщой городок в аризоне, заслуживающий большего!</h2>
           <p class="city-slogan-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
@@ -86,8 +87,7 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item-container-large">
-              <img class="advantages-img" src="images/advantage-2.jpg" width="800" height="385"
-                alt="Каньон 'Мост дьявола'">
+              <img class="advantages-img" src="images/advantage-2.jpg" width="800" height="385" alt="Каньон Мост дьявола">
               <div class="advantages-item">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -159,7 +159,7 @@
         </div>
         <div class="htmlacademy-link-container">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="htmlacademy-img" src="images/footer/logo-htmlacademy.png" alt="htmlacademy">
+            <img class="htmlacademy-img" width="123" height="42" src="images/footer/logo-htmlacademy.png" alt="htmlacademy">
           </a>
         </div>
       </footer>
@@ -175,7 +175,7 @@
               <label class="modal-date-label" for="arrival-date">
                 <span class="modal-input-title modal-date-title">Дата заезда:</span>
                 <div class="modal-date-input-container">
-                  <input class="modal-date-input" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+                  <input class="modal-date-input" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
                   <button class="modal-input-icon"></button>
                   <p class="modal-input-hint modal-input-hint-warning">Мы не можем отправить вас в прошлое.</span>
                 </div>
@@ -183,7 +183,7 @@
               <label class="modal-date-label" for="leaving-date">
                 <span class="modal-input-title modal-date-title">Дата выезда:</span>
                 <div class="modal-date-input-container">
-                  <input class="modal-date-input" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" placeholder="Укажите дату">
+                  <input class="modal-date-input" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" placeholder="Укажите дату" required>
                   <button class="modal-input-icon"></button>
                   <p class="modal-input-hint">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
@@ -197,7 +197,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <input class="modal-counter-input" value="2" type="number" id="counter-adults" name="counter adults" required="">
+                  <input class="modal-counter-input" value="2" type="number" id="counter-adults" name="counter adults" required>
                   <button type="button" name="plus" class="modal-count-btn">
                     <span class="visually-hidden">кнопка плюса</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -213,17 +213,18 @@
                       <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
                     </svg>
+                    <p class="about-kids-hint" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых
+                      от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </p>
                   </div>
-                  <span class="about-kids-hint" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых
-                    от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </span>
+
                   <button type="button" name="minus" class="modal-count-btn all-button">
                     <span class="visually-hidden">кнопка минуса</span>
                     <svg class="minus-svg" width="14" height="14" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <input class="modal-counter-input" value="2" type="number" id="counter-kids" name="counter kids" required="" maxlength="99">
+                  <input class="modal-counter-input" value="2" type="number" id="counter-kids" name="counter kids" maxlength="99" required>
                   <button type="button" name="plus" class="modal-count-btn all-button">
                     <span class="visually-hidden">кнопка плюса</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
