@@ -20,22 +20,6 @@
   box-sizing: border-box;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    appearance: none;
-}
-
-input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
-    appearance: textfield;
-}
-
-input {
-  font-family: "PT Sans", sans-serif;
-  background-color: #E6E6E6;
-}
-
 html {
   height: 100%;
 }
@@ -747,6 +731,7 @@ body {
 }
 
 .price-input {
+  appearance: textfield;
   transition: all 0.3s;
   padding: 12px 40px 12px 20px;
   width: 143px;
@@ -1283,11 +1268,7 @@ body {
   margin-right: 10px;
 }
 
-.about-kids-button {
-  display: flex;
-  align-items: center;
-  border: none;
-  background-color: transparent;
+.about-kids-hint-container {
   position: relative;
   margin: auto 45px auto 0;
   padding: 0;
@@ -1298,7 +1279,7 @@ body {
 .about-kids-hint {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 45px;
   right: -115px;
   width: 256px;
   min-height: 143px;
@@ -1314,9 +1295,10 @@ body {
   transform-origin: 0% -5%;
   transition: transform 0.3s;
   pointer-events: none;
+  z-index: 1;
 }
 
-.about-kids-button:hover .about-kids-hint{
+.about-kids-hint-container:hover .about-kids-hint{
   display: block;
 }
 
@@ -1371,6 +1353,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.input-all {
+  font-family: "PT Sans", sans-serif;
+  background-color: #F2F2F2;
 }
 
 .button-all {

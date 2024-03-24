@@ -146,7 +146,7 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="newsletter-email-label" for="newsletter-email">
               <span class="visually-hidden">Введите ваш email</span>
-              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
+              <input class="input-all" type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
             </label>
             <button class="newsletter-submit-button button-all button-additional" type="submit">Подписаться</button>
           </form>
@@ -181,7 +181,7 @@
         </div>
       </footer>
 
-      <div class="modal-container modal-container-close">
+      <div class="modal-container">
         <div class="modal modal-search">
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -192,7 +192,7 @@
               <div class="modal-date-container">
                 <label class="modal-input-title modal-date-title" for="arrival-date">Дата заезда:</label>
                 <div class="modal-date-input-container">
-                  <input class="modal-date-input" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+                  <input class="modal-date-input input-all" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
                   <button class="modal-input-icon button-all" type="button">
                     <span class="visually-hidden">Отркыть календарь</span>
                   </button>
@@ -202,7 +202,7 @@
               <div class="modal-date-container">
                 <label class="modal-input-title modal-date-title" for="leaving-date">Дата выезда:</label>
                 <div class="modal-date-input-container">
-                  <input class="modal-date-input" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" placeholder="Укажите дату" required>
+                  <input class="modal-date-input input-all" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" placeholder="Укажите дату" required>
                   <button class="modal-input-icon button-all" type="button">
                     <span class="visually-hidden">Отркыть календарь</span>
                   </button>
@@ -218,7 +218,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <input class="modal-counter-input" value="2" type="number" id="counter-adults" name="counter adults" required>
+                  <input class="modal-counter-input input-all" value="2" type="number" id="counter-adults" name="counter adults" required>
                   <button type="button" name="plus" class="modal-count-btn button-all">
                     <span class="visually-hidden">Кнопка увеличения количества детей</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -229,21 +229,22 @@
                 <div class="modal-counter-container">
                   <label class="modal-input-title modal-input-title-kids" for="counter-kids">Дети:</label>
                   <span class="visually-hidden">тултип о детях</span>
-                  <svg class="kids-count-hint-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
-                  </svg>
-                  <span class="about-kids-hint" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых
-                    от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </span>
-
+                  <div class="about-kids-hint-container">
+                    <svg class="kids-count-hint-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
+                    </svg>
+                    <span class="about-kids-hint" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых
+                      от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </div>
                   <button class="modal-count-btn button-all" name="minus" type="button">
                     <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
                     <svg class="minus-svg" width="14" height="14" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <input class="modal-counter-input" value="2" type="number" id="counter-kids" name="counter kids" max="99" required>
+                  <input class="modal-counter-input input-all" value="2" type="number" id="counter-kids" name="counter kids" max="99" required>
                   <button class="modal-count-btn button-all"  name="plus" type="button">
                     <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
