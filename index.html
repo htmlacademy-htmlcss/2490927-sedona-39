@@ -10,25 +10,24 @@
 
   <body>
     <div class="page-container">
-
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <div class="navigation-pages-container">
-            <a class="navigation-logo-link" href="index.html" aria-current="page">
+            <a class="navigation-logo-link current-page" href="index.html" aria-current="page">
               <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70"
                 alt="Логотип сайта города Седон">
             </a>
             <ul class="navigation-list navigation-pages">
               <li class="navigation-item">
-                <a class="navigation-link navigation-link-currnet" href="index.html" aria-current="page">
+                <a class="navigation-link navigation-link-pages navigation-link-currnet" href="index.html" aria-current="page">
                   Главная
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">О Седоне</a>
+                <a class="navigation-link navigation-link-pages" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link navigation-link-pages" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -45,7 +44,7 @@
               </a>
             </li>
             <li class="navigation-item-button">
-              <a class="navigation-button" href="#">Хочу сюда!</a>
+              <a class="navigation-button button-all button-main" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -61,7 +60,7 @@
 
         <section class="advantages-section" data-test="advantages">
           <div class="city-slogan">
-            <h1 class="city-slogan-title">Седона — небольщой городок в аризоне, заслуживающий большего!</h2>
+            <h2 class="city-slogan-title">Седона — небольщой городок в аризоне, заслуживающий большего!</h2>
             <p class="city-slogan-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <div class="advantages">
@@ -106,15 +105,27 @@
           <ul class="reasons-list">
             <li class="reasons-item reasons-item-house">
               <h3 class="reasons-title">Жильё</h3>
-              <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="reasons-description">
+                Рекомендуем пожить<br>
+                в настоящем мотеле,<br>
+                всё как в кино!
+              </p>
             </li>
             <li class="reasons-item reasons-item-food">
               <h3 class="reasons-title">Еда</h3>
-              <p class="reasons-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="reasons-description">
+                Всегда заказывайте<br>
+                топовый фирменный бургер,<br>
+                вы не разочаруетесь!
+              </p>
             </li>
             <li class="reasons-item reasons-item-gift">
               <h3 class="reasons-title">Сувениры</h3>
-              <p class="reasons-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="reasons-description">
+                Не только китайского, но и<br>
+                настоящего местного<br>
+                производства!
+              </p>
             </li>
           </ul>
         </section>
@@ -126,18 +137,18 @@
               предложения
               гостиниц в Седоне</p>
           </div>
-          <a class="search-hotel-link" href="#">Поиск гостиницы в Седоне</a>
+          <a class="search-hotel-link button-all button-main" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="newsletter" data-test="subscribe">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="newsletter-form-input-container">
-              <label class="visually-hidden" for="newsletter-email">Введите ваш email</label>
+            <label class="newsletter-email-label" for="newsletter-email">
+              <span class="visually-hidden">Введите ваш email</span>
               <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
-            </div>
-            <button class="newsletter-submit-button" type="submit">Подписаться</button>
+            </label>
+            <button class="newsletter-submit-button button-all button-additional" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -145,13 +156,19 @@
       <footer class="page-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy"></a>
+            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ссылка на группу ВКонтакте</span>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-link-telegram" href="https://t.me/htmlacademy"></a>
+            <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ссылка на Telegram канал</span>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ссылка на Youtube канал</span>
+            </a>
           </li>
         </ul>
         <div class="footer-contacts-phone-container">
@@ -166,74 +183,76 @@
 
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <button class="modal-close-button button-all" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="modal-date-label" for="arrival-date">
-                <span class="modal-input-title modal-date-title">Дата заезда:</span>
+              <div class="modal-date-container">
+                <label class="modal-input-title modal-date-title" for="arrival-date">Дата заезда:</label>
                 <div class="modal-date-input-container">
                   <input class="modal-date-input" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
-                  <button class="modal-input-icon"></button>
-                  <p class="modal-input-hint modal-input-hint-warning">Мы не можем отправить вас в прошлое.</span>
+                  <button class="modal-input-icon button-all" type="button">
+                    <span class="visually-hidden">Отркыть календарь</span>
+                  </button>
+                  <p class="modal-input-hint modal-input-hint-warning">Мы не можем отправить вас в прошлое.</p>
                 </div>
-              </label>
-              <label class="modal-date-label" for="leaving-date">
-                <span class="modal-input-title modal-date-title">Дата выезда:</span>
+              </div>
+              <div class="modal-date-container">
+                <label class="modal-input-title modal-date-title" for="leaving-date">Дата выезда:</label>
                 <div class="modal-date-input-container">
                   <input class="modal-date-input" type="text" id="leaving-date" name="leaving-date" value="1 сентября 2023" placeholder="Укажите дату" required>
-                  <button class="modal-input-icon"></button>
-                  <p class="modal-input-hint">На эти даты есть свободные номера. Пока есть.</span>
+                  <button class="modal-input-icon button-all" type="button">
+                    <span class="visually-hidden">Отркыть календарь</span>
+                  </button>
+                  <p class="modal-input-hint">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
-              </label>
+              </div>
               <div class="modal-input-container">
-                <label class="modal-counter-label" for="counter-adults">
-                  <span class="modal-input-title modal-input-title-adults">Взрослые:</span>
-                  <button type="button" name="minus" class="modal-count-btn all-button">
-                    <span class="visually-hidden">кнопка минуса</span>
+                <div class="modal-counter-container">
+                  <label class="modal-input-title modal-input-title-adults" for="counter-adults">Взрослые:</label>
+                  <button class="modal-count-btn button-all" name="minus" type="button">
+                    <span class="visually-hidden">Кнопка уменьшения количества детей</span>
                     <svg class="minus-svg" width="14" height="14" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
                   <input class="modal-counter-input" value="2" type="number" id="counter-adults" name="counter adults" required>
-                  <button type="button" name="plus" class="modal-count-btn">
-                    <span class="visually-hidden">кнопка плюса</span>
+                  <button type="button" name="plus" class="modal-count-btn button-all">
+                    <span class="visually-hidden">Кнопка увеличения количества детей</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                </label>
-                <label class="modal-counter-label" for="counter-kids">
-                  <span class="modal-input-title modal-input-title-kids">Дети:</span>
-                  <div class="about-kids-button">
-                    <span class="visually-hidden">тултип о детях</span>
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
-                    </svg>
-                    <p class="about-kids-hint" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых
-                      от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                    </p>
-                  </div>
+                </div>
+                <div class="modal-counter-container">
+                  <label class="modal-input-title modal-input-title-kids" for="counter-kids">Дети:</label>
+                  <span class="visually-hidden">тултип о детях</span>
+                  <svg class="kids-count-hint-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"></path>
+                  </svg>
+                  <span class="about-kids-hint" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых
+                    от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
 
-                  <button type="button" name="minus" class="modal-count-btn all-button">
-                    <span class="visually-hidden">кнопка минуса</span>
+                  <button class="modal-count-btn button-all" name="minus" type="button">
+                    <span class="visually-hidden">Кнопка уменьшения количества взрослых</span>
                     <svg class="minus-svg" width="14" height="14" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <input class="modal-counter-input" value="2" type="number" id="counter-kids" name="counter kids" maxlength="99" required>
-                  <button type="button" name="plus" class="modal-count-btn all-button">
-                    <span class="visually-hidden">кнопка плюса</span>
+                  <input class="modal-counter-input" value="2" type="number" id="counter-kids" name="counter kids" max="99" required>
+                  <button class="modal-count-btn button-all"  name="plus" type="button">
+                    <span class="visually-hidden">Кнопка увеличения количества взрослых</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                </label>
+                </div>
               </div>
-              <button class="button search-form-search" type="submit">Найти</a>
+              <button class="button search-form-search button-all button-additional" type="submit">Найти</button>
             </form>
           </section>
         </div>
