@@ -525,12 +525,17 @@ body {
   gap: 5px;
 }
 
+.social-item {
+  width: 48px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .social-item a {
   color: #000;
   text-decoration: none;
   display: flex;
-  width: 48px;
-  height: 40px;
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
@@ -1462,12 +1467,12 @@ body {
   opacity: 0.3;
 }
 
-.social-link:hover svg path,
-.social-link:focus-visible svg path {
+.social-link-icon:hover path,
+.social-link-icon:focus-visible path {
   fill: #68A2CA;
 }
 
-.social-link:active svg path {
+.social-link-icon:active path {
   fill: #68A2CA;
   opacity: 0.3;
 }
